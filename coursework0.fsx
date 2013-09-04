@@ -51,5 +51,7 @@ let greeting name = printfn "Hello: %s" name
 
 // 7. Use the 'http' function from the lecture to download the file
 //    http://cs.ttu.ee/courses/itt8060/text.txt as a string
+//    NOTE: you cannot use this function in tryfsharp. Instead you can
+//    paste the text into your file as a string and process it locally
 
 // 8. run 'stats' on the downloaded file
