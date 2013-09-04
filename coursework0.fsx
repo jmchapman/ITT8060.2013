@@ -50,6 +50,6 @@ let greeting name = printfn "Hello: %s" name
 //    hint: try float: 'int -> float'
 
 // 7. Use the 'http' function from the lecture to download the file
-//    http:///cs.ttu.ee/courses/itt8060/text.txt as a string
+//    http://cs.ttu.ee/courses/itt8060/text.txt as a string
 
 // 8. run 'stats' on the downloaded file
