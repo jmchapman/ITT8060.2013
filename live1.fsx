@@ -1,3 +1,17 @@
+(*
+
+  ITT8060 -- Advanced Programming 2013
+  Department of Computer Science
+  Tallinn University of Technology
+  ------------------------------------
+
+  Lecture 1: Lightning Introduction
+
+  James Chapman and Juhan Ernits
+
+  Material based on chapter 2 of Expert F#
+*)
+
 let text = "All the king's horses and all the king's men"
 text <- ""
 

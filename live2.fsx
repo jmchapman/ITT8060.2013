@@ -1,4 +1,16 @@
-(* Lecture 2: values, functions, tuples and lists *)
+(*
+
+  ITT8060 -- Advanced Programming 2013
+  Department of Computer Science
+  Tallinn University of Technology
+  ------------------------------------
+  Lecture 2: values, functions, tuples and lists
+
+  James Chapman and Juhan Ernits
+
+  Material based on chapter 3 of RWFP
+
+*)
 
 let number = 24
 printfn "%d" number
