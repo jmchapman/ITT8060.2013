@@ -1,4 +1,17 @@
-﻿
+﻿(*
+
+  ITT8060 -- Advanced Programming 2013
+  Department of Computer Science
+  Tallinn University of Technology
+  ------------------------------------
+  Lecture 3: interoperability of F# and .NET libraries
+
+  James Chapman and Juhan Ernits
+
+  Material based on chapter 4 of RWFP
+
+*)
+
 #light
 
 open System
