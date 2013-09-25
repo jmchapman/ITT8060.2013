@@ -1,4 +1,16 @@
-// Lecture 4 types
+(*
+
+  ITT8060 -- Advanced Programming 2013
+  Department of Computer Science
+  Tallinn University of Technology
+  ------------------------------------
+  Lecture 5: making types and values
+
+  James Chapman and Juhan Ernits
+
+  Material based on chapter 5 of RWFP
+
+*)
 
 // int * int
 // 1 , 2
@@ -122,4 +134,3 @@ let tup = 123, "hello world"
 let input =
   printfn "Calculating..." ; if num = 0 then None else Some (num.ToString())
 
-let 
