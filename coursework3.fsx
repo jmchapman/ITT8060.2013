@@ -58,7 +58,7 @@
 //          [1,2,3]
 //
 //     Note: composing the answers to 5 and 6 should yield the original
-//     input list.
+//     input list (for non-empty lists).
 
 // 7. Create a new tree datatype STree
 //    where the nodes also carry integers.
