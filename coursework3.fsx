@@ -28,6 +28,7 @@
 // 1. Write a function rebracket : (int * char) * float -> int * (char * float)
 //    Include type annotations on all arguments and the
 //    return type so that it has exactly this type.
+//    Note: that F# prints the arguments' names as well. This is ok.
 
 // 2. Write a funciton optionfloat : option<int> -> option<float> that
 // converts and optional integer to an optional float
