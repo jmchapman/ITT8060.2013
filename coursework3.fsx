@@ -68,7 +68,7 @@
 
 // ** bonus question **
 
-// 9. filter factors of a supplied n from Tree. What happens if you
-//    filter out everything?
+// 9. filter out factors of a supplied n from Tree. i.e. remove the factors.
+//    What happens if you filter out everything?
 
 
