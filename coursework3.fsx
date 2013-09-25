@@ -41,10 +41,10 @@
 // 5. Given this definition of leaf lablelled binary trees:
 //    type Tree =
 //      | Node of (Tree * Tree)
-//      | leaf of int
+//      | Leaf of int
 //
 //    Write a function to build a tree from a list. If one reads the
-//    labels of the tree from left to write then they should be in the
+//    labels of the tree from left to right then they should be in the
 //    same order as the original list.
 
 // 6. Write a function to flatten the tree back into a list
