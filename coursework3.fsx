@@ -21,7 +21,7 @@
 
   This coursework will be graded. Please send the completed coursework
   including your name and student ID in the comments by e-mail to
-  itt8060@cs.ttu.ee by Friday, October 11.
+  itt8060@cs.ttu.ee by Friday, October 4.
 
 *)
 
