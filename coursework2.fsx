@@ -35,6 +35,7 @@
 // 3. Create a histogram chart where you show the percentages of total
 //    population living in each county.
 
+// *** Bonus question ***
 // 4. Extend the histogram in such a way that each bar is divided into two
 //    parts, representing the appropriate proportion of people living in 
 //    towns and counties.
