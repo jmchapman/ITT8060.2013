@@ -29,6 +29,6 @@ type Exp<'t> =
 // 6. Write a map function for Exp<'t>, it can be thought of a
 //    'renaming' function that renames variables.
 
-// 7. Write a bind (see section 6.8.2) function Exp<'t>, it can be
+// 7. Write a bind function (see section 6.8.2) for Exp<'t>, it can be
 //    thought of as a substitution function that replaces variables with
 //    expressions.
