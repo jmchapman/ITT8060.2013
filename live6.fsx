@@ -1,6 +1,6 @@
 ﻿(*
 
-   Today's lecture: Data centric and behaviour centric
+   Lecture Oct 9, 2013: Data centric and behaviour centric
    programs.
 
    Based on chapter 7 and chapter 8 of RWFP.
@@ -178,11 +178,19 @@ let testClient(client) =
 testClient john
 
 // Point free programming style
+// Builds on partial function application and function composition.
 
-[0..10] |> List.map ((+) 100 )
+[1..10] |> List.map((+) 100)
 places |> List.map (snd >> statusByPopulation)
 
-// Builds on partial function application and function composition.
+
+
+//A note on fold: takes the list, applies a (partially evaluated) function to all elements
+// of a list while preserving an accumulator variable:
+// Compute the sum of the elements of the list, starting from 0.
+
+[1..10] |> List.fold (+) 0
+
 
 
 // Decision tree
