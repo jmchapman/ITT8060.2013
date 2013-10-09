@@ -32,7 +32,7 @@
 
 // 1. Download a snapshot of the RSS feed (or load directly over HTTP):
 //    http://www.theregister.co.uk/headlines.atom
-//    Using the example from live5.fsx, write a data structure RSSPart in F#
+//    Using the example from live6.fsx, write a data structure RSSPart in F#
 //    that you would use to represent RSS feeds.
 
 
