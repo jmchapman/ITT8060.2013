@@ -35,8 +35,9 @@
 // waiting for input. To test your answer to questions 1 and 2 you can
 // run them in the command line version of f# interactive. The easiest
 // way is to launch the developer command prompt for VS2012, then run:
-// fsharpi --use:coursework5.fsx. It also works fine with Mono/Emacs
-// on OS X and probably other combinations.
+// fsi --use:coursework5.fsx. You can also copy and paste in code,
+// adding ";;" where necessary. It also works fine with Mono/Emacs on
+// OS X and probably other combinations.
 
 
 // 1. Implement readAndAdd1 : unit -> option<int>
