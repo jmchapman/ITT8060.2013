@@ -30,6 +30,15 @@
 
 *)
 
+// NOTE: We discovered in the lab that the readInput function doesn't
+// work proplerly in Visual Studio - it return immediately without
+// waiting for input. To test your answer to questions 1 and 2 you can
+// run them in the command line version of f# interactive. The easiest
+// way is to launch the developer command prompt for VS2012, then run:
+// fsharpi --use:coursework5.fsx. It also works fine with Mono/Emacs
+// on OS X and probably other combinations.
+
+
 // 1. Implement readAndAdd1 : unit -> option<int>
 //    The function should read 3 numbers from the user, add them
 //    together and return them. In this question use three levels of
