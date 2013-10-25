@@ -91,6 +91,13 @@ let parseExp strexp =
 //   and values
 let rec lookup (x : string)(env : (string * int) list) : int option = ?
 
+// examples
+lookup "x" [("x", 1); ("y", 2)]
+// returns Some 1
+
+lookup "z" [("x", 1); ("y", 2)]
+// return None 
+
 
 // 2) Write a function that converts from open expressions to closed
 //    ones by replacing all variables with their values from the
@@ -98,10 +105,20 @@ let rec lookup (x : string)(env : (string * int) list) : int option = ?
   
 let rec close (e : Exp)(env : (string * int) list) : CExp option = ?
 
+// examples
+close (Add (Var "x", Var "y")) [("x", 1); ("y", 2)]
+// returns Some (CAdd (CVal 1,CVal 2))
+
+close (Add (Var "x", Var "z")) [("x", 1); ("y", 2)]
+// returns None
+
 // 3) Write an evaluator that takes a (closed) expression and returns an int.
 
 let rec eval (e : CExp) : int = ?
 
+// example
+eval (CAdd (CVal 1, CVal 2))
+// returns 3
 
 // Here is a calculator type which contains an environment and has
 // some member functions which haven't been defined yet.
