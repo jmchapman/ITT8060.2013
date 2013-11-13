@@ -40,6 +40,7 @@ module PerfectBinaryTree =
     | Simple  of 'lab
     | Complex of Tree<'lab * 'lab>
 
+<<<<<<< HEAD
     // Example trees
 
     let example1 = Simple  1
@@ -48,6 +49,8 @@ module PerfectBinaryTree =
     let example4 = Complex (Complex (Complex (Simple (((1, 2), (3, 4)),
                                                       ((5, 6), (7, 8))))))
 
+=======
+>>>>>>> d8d7d5be11eb198e7290396efd4984848d2c21f8
     // Computing the list of leaves
 
     (*
