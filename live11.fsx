@@ -25,9 +25,9 @@ module BinaryTree =
 
     // Transforming labels
 
-    let rec map<'srclab, 'dstlab> (f    : 'srclab -> 'dstlab)
-                                  (tree : Tree<'srclab>)
-                                  : Tree<'dstlab> =
+    let rec map<'srcLab, 'dstLab> (f    : 'srcLab -> 'dstLab)
+                                  (tree : Tree<'srcLab>)
+                                  : Tree<'dstLab> =
         match tree with
         | Leaf   lab           -> Leaf   (f lab)
         | Branch (left, right) -> Branch (map f left, map f right)
@@ -69,9 +69,9 @@ module PerfectBinaryTree =
 
     // Transforming labels
 
-    let rec map<'srclab, 'dstlab> (f    : 'srclab -> 'dstlab)
-                                  (tree : Tree<'srclab>)
-                                  : Tree<'dstlab> =
+    let rec map<'srcLab, 'dstLab> (f    : 'srcLab -> 'dstLab)
+                                  (tree : Tree<'srcLab>)
+                                  : Tree<'dstLab> =
         match tree with
         | Simple  lab
             -> Simple  (f lab)
