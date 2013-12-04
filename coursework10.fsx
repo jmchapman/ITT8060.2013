@@ -56,44 +56,24 @@ let rec getIndicatorData(date, indicator, page) = async {
     return doc::rest
 }
 
-
 let downloadAll = seq {
   for ind in [ "AG.SRF.TOTL.K2"; "AG.LND.FRST.ZS" ] do
     for year in [ "1990:1990"; "2000:2000"; "2005:2005" ] do
       yield getIndicatorData(year, ind, 1) }
 
 let data = Async.RunSynchronously(Async.Parallel(downloadAll))
-let rec getIndicatorData(date, indicator, page) = async {
-  let args = [ "countries"; "indicators"; indicator ],
-             [ "date", date; "page", string(page)]
-  System.Console.WriteLine(worldBankUrl(args))
-  let! doc = worldBankRequest args
-  System.Console.WriteLine(doc)
-  let pages =
-    doc |> xnested [ "data" ]
-    |> xattr "pages" |> int
-  if (pages = page) then
-    return [doc]
-  else
-    let page = page + 1
-    let! rest = getIndicatorData(date, indicator, page)
-    return doc::rest
-}
-
-
-let downloadAll = seq {
-  for ind in [ "AG.SRF.TOTL.K2"; "AG.LND.FRST.ZS" ] do
-    for year in [ "1990:1990"; "2000:2000"; "2005:2005" ] do
-      yield getIndicatorData(year, ind, 1) }
-
-let data = Async.RunSynchronously(Async.Parallel(downloadAll))
-
 
 // Create a time series of data about the proportion of land
 // covered with forest as a function of population growth.
 // Get data points for every 5 years for 5 points prior to 2010.
 
-// 2. Display the data points for each country in text format as
+// 2. Extend the error handling of worldBankDownload
+// to support error messages given in XML, // like, e.g.
+// <wb:error xmlns:wb="http://www.worldbank.org">
+//   <wb:message id="120" key="Invalid value">The provided // parameter value is not valid</wb:message>
+// </wb:error>
+
+// 3. Display the data points for each country in text format as
 // a sorted list. The sorting key should be the initial
 // population of the country.
 
